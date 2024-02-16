@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    /* Estilos CSS */
+    /* Estilos CSS */
+    body {
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+    }
+
+    /* Estilos para las secciones */
+    .section {
+      margin-top: 10px; /* Ajusta el espacio superior */
+      margin-bottom: 80px; /* Ajusta el espacio inferior */
+    }
+
+    .section h2 {
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 90%; /* Ajuste del ancho del contenedor */
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 40px; /* Margen superior */
+      margin-bottom: 40px; /* Margen inferior */
+      margin-left: 10px; /* Margen izquierdo en pantallas grandes */
+    }
+
+    .logo-container {
+      text-align: center;
+      margin-bottom: 20px; /* Ajusta el espacio entre el logo y el título */
+    }
+
+    .logo {
+      width: 150px; /* Ajusta el tamaño del logo */
+      height: auto;
+    }
+
+    .form-title {
+      text-align: center; /* Centra el título */
+    }
+
+    .form-description {
+      text-align: center; /* Centra la descripción */
+      font-size: 14px; /* Ajusta el tamaño del texto */
+      margin: 5px 10px; /* Ajusta el margen vertical */
+    }
+
+    form {
+      margin: 0; /* Elimina los márgenes del formulario */
+    }
+
+    .input-group {
+      margin-bottom: 20px; /* Espaciado entre grupos */
+    }
+
+    /* Estilos para los títulos */
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    /* Estilos para el elemento con el texto de descripción */
+    .description-container {
+      max-width: 300px; /* Ancho máximo del elemento */
+      margin: 0 auto; /* Centra el elemento horizontalmente */
+    }
+
+    .form-description {
+      font-size: 14px;
+      margin: 5px 0; /* Ajusta el margen vertical */
+    }
+
+    /* Estilos para los inputs y labels */
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input,
+    select {
+      width: 100%; /* 100% de ancho */
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      box-sizing: border-box; /* Incluye padding y border en el ancho */
+    }
+
+    .button-container {
+      text-align: center; /* Centra el botón horizontalmente */
+      margin-top: 20px; /* Ajusta el espacio superior */
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+      width: 150px; /* Ajusta el ancho del botón */
+      margin: 0 auto; /* Centra el botón horizontalmente */
+      display: block; /* Para asegurar que ocupe todo el ancho disponible */
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Estilos para los checkboxes y sus etiquetas */
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px; /* Espaciado entre las etiquetas */
+    }
+
+    .checkbox-label input[type="checkbox"] {
+      margin-right: 10px; /* Espacio entre el checkbox y el texto */
+      align-self: flex-start; /* Alinear verticalmente con el texto */
+    }
+
+    /* Media query para pantallas más pequeñas, como dispositivos móviles */
+    @media screen and (max-width: 600px) {
+      .container {
+        margin-left: 5px; /* Ajuste del margen izquierdo en dispositivos móviles */
+      }
+    }
+  </style>
+</head>
+<body>
+<section class="section">
+  <div class="container section">
+      <form id="fichaPersonal">
+        <div class="logo-container">
+              <img src="img/logo.png" alt="Logo" class="logo">
+            </div class="description-container">
+            <h2 class="form-title">Ficha Personal</h2>
+            <div>
+            <p class="form-description">Formulario de Registro - Control de Venezolanos en Sajonia.</p>
+            </div>
+            <div class="input-group">
+          <div class="input-row">
+            <label for="nombres">Nombre:</label>
+            <input type="text" id="nombres" name="nombres" placeholder="Jose, Antonio">
+          </div>
+          <div class="input-row">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Perez, Perez">
+          </div>
+        </div>
+        
+        <div class="input-group">
+          <div class="input-row">
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+          </div>
+          <div class="input-row">
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="0" placeholder="introduce tu edad">
+          </div>
+        </div>
+        
+        <div class="input-group">
+          <div class="input-row">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico">
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="input-row">
+            <label for="email">Teléfono:</label>
+            <input type="email" id="email" name="email" placeholder="+49 0176 XXXXXXXX">
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="input-row">
+            <label for="foto">Insertar Imagen: (No es obligatorio)</label>
+            <input type="file" id="fotoInput" name="foto" onchange="mostrarImagen(event)">
+            <p>Foto tomar o elegir</p>
+          </div>
+        </div>
+        <div class="imagen-container">
+          <img id="imagenSeleccionada" src="#" alt="Tu imagen" style="display: none;">
+        </div>
+
+        <h2>Elige tu Profesión:</h2>
+        <div class="input-group">
+          <input type="text" list="profesiones" placeholder="Selecciona tu profesión" required>
+          <datalist id="profesiones">
+            <!-- Agrega todas las opciones de profesiones -->
+            <option value="Del Hogar">
+            <option value="Estudios en Segundaria">
+            <option value="Técnico Superior Univeritario">
+            <option value="Ingeniero">
+            <option value="Licenciado">
+            <option value="Medicina">
+            <option value="Ingeniería Sistemas">
+            <option value="Ingeniería Civil">
+            <option value="Ingeniería Eléctrica">
+            <option value="Ingeniería Mecánica">
+            <option value="Derecho">
+            <option value="Administración de Empresas">
+            <option value="Contaduría Pública">
+            <option value="Comunicación Social">
+            <option value="Arquitectura">
+            <option value="Educación (especificar especialidad)">
+            <option value="Odontología">
+            <option value="Técnico Superior en Administración">
+            <option value="Técnico Superior en Contabilidad">
+            <option value="Técnico Superior en Informática">
+            <option value="Técnico Superior en Electricidad">
+            <option value="Técnico Superior en Mecánica">
+            <option value="Técnico Superior en Electrónica">
+            <option value="Técnico Superior en Turismo">
+            <option value="Técnico Superior en Construcción Civil">
+            <option value="Técnico Superior en Química">
+            <option value="Técnico Superior en Mantenimiento Industrial">
+          </datalist>
+        </div>
+
+        <section class="section">
+          <h2>Información de Familiares:</h2>
+          <div class="input-group">
+            <label class="checkbox-label">
+              Solo
+              <input type="checkbox" id="solo" name="ubicacion" value="Solo">
+            </label>
+            <label class="checkbox-label">
+              Familia:
+              <input type="checkbox" id="familia" name="ubicacion" value="Familia">
+            </label>
+            <input type="number" id="cuantosFamilia" placeholder="Cantidad de miembros de tu familia" min="0" max="10">
+            <label class="checkbox-label">
+              <input type="number" id="cuantosNinos" placeholder="Cuantos son niños" min="0" max="10">
+            </label>
+            <input type="text" id="dondeEncuentras" placeholder="Donde te encuentras">
+          </div>
+        </section>
+
+
+        <h2>Tu estatus en Alemania?</h2>
+        <div class="dropdown">
+          <select name="estatus" id="estatus">
+            <!-- Agrega todas las opciones de estatus en Alemania -->
+            <option value="Solicitante Asilo">Solicitante de Asilo</option>
+            <option value="Asilo Político">Asilo Político - Aprobado</option>
+            <option value="Protección Subsidiaria">Protección Subsidiaria - Aprobado</option>
+            <option value="Protección Temporal">Protección Temporal - Aprobado</option>
+            <option value="Protección Humanitarias">Protección Humanitarias - Aprobado</option>
+            <option value="Protección Duldung">Duldung con Linea Roja- Aprobado</option>
+            <!-- Agrega el resto de las opciones -->
+          </select>
+        </div>
+
+        <div class="button-container">
+          <button type="submit">Enviar</button>
+
+        </div>
+
+      </form>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  function mostrarImagen(event) {
+    // Lógica para mostrar la imagen seleccionada
+  }
+
+  function mostrarImagen(event) {
+  const imagen = document.getElementById('imagenSeleccionada');
+  imagen.style.display = 'block';
+
+  const archivo = event.target.files[0];
+  const lector = new FileReader();
+
+  lector.onload = function(event) {
+    imagen.src = event.target.result;
+  };
+
+  lector.readAsDataURL(archivo);
+}
+
+// Obtener los elementos del DOM
+const familiaCheckbox = document.getElementById('familia');
+const cuantosFamiliaInput = document.getElementById('cuantosFamilia');
+const cuantosNinosInput = document.getElementById('cuantosNinos');
+const soloCheckbox = document.getElementById('solo');
+
+// Agregar eventos para controlar la lógica de los campos
+familiaCheckbox.addEventListener('change', function() {
+  if (this.checked) {
+    cuantosFamiliaInput.disabled = false;
+    cuantosNinosInput.disabled = false;
+    soloCheckbox.checked = false;
+  } else {
+    cuantosFamiliaInput.disabled = true;
+    cuantosNinosInput.disabled = true;
+  }
+});
+
+soloCheckbox.addEventListener('change', function() {
+  if (this.checked) {
+    familiaCheckbox.checked = false;
+    cuantosFamiliaInput.disabled = true;
+    cuantosNinosInput.disabled = true;
+  }
+});
+</script>
+
+</body>
+</html>
